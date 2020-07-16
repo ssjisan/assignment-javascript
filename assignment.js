@@ -32,9 +32,20 @@ function brickCalculator(floor){
         console.log(elevenToTwenty);
     else if(floor>20)
         console.log(upToTwenty);
-    else if(floor<=0)
-        console.log("check");
 }
-var result= brickCalculator(3) ;
+var result= brickCalculator(122) ;
 
 // Tiny Friend
+
+function tinyFrined(name){
+    var myFriends = name[0];
+    for(var i=0; i< String.length; i++)
+    var currentName= name[i]
+        if (currentName<myFriends){
+            currentName=myFriends;
+        }
+        return myFriends;
+    }
+
+var friendsName = tinyFrined(['asad','mas','kalasa']);
+console.log(friendsName);

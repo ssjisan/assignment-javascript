@@ -27,25 +27,26 @@ function brickCalculator(floor){
     var elevenToTwenty = (floor*12)*1000;
     var upToTwenty = (floor*10)*1000;
     if(floor<=10)
-        console.log(firstToTen);
+        console.log("You need Total", firstToTen, "bricks");
     else if(floor<=20)
-        console.log(elevenToTwenty);
+        console.log("You need Total", elevenToTwenty, "bricks");
     else if(floor>20)
-        console.log(upToTwenty);
+        console.log("You need Total", upToTwenty, "bricks");
 }
 var result= brickCalculator(122) ;
 
 // Tiny Friend
 
-function tinyFrined(name){
-    var myFriends = name[0];
-    for(var i=0; i< String.length; i++)
-    var currentName= name[i]
-        if (currentName<myFriends){
-            currentName=myFriends;
+function tinyFriend(name){
+        var myFriends = name[0];
+        for(var i = 0; i < name.length; i++){
+            var currentName = name[i];
+            if(currentName.length < myFriends.length){
+                myFriends = currentName;
+            }
         }
         return myFriends;
     }
 
-var friendsName = tinyFrined(['asad','mas','kalasa']);
-console.log(friendsName);
+var myTinyFriend = tinyFriend(["Saab", "M", "Ferrari", "Volvo", "BMW"]);
+console.log(resultmyTinyFriend);
